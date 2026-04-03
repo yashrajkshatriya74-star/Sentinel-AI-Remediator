@@ -1,9 +1,24 @@
 # 🛡️ Sentinel AI Remediator
-**Autonomous Security Auditing & Auto-Patch Generation**
+**Automated Security Auditing & AI-Powered Patch Generation**
 
-Sentinel AI Remediator is an advanced security tool designed to bridge the gap between vulnerability detection and code correction. By integrating **Bandit** for static analysis and **Google Gemini 1.5 Flash** for intelligent remediation, it doesn't just find bugs—it fixes them.
+Sentinel AI Remediator is a sophisticated security tool that leverages **Bandit** for static analysis and **Google Gemini 1.5 Flash** to provide intelligent, context-aware remediation for Python code.
 
-### 🚀 Key Innovations:
-* **One-Click Remediation:** Automatically generates secure code patches for detected vulnerabilities (CWE-78, CWE-327, etc.).
-* **Context-Aware Security:** Uses LLMs to explain *why* a piece of code is insecure and provides industry-standard alternatives.
-* **Enterprise Security:** Integrated with **Auth0** for secure user authentication and session management.
+---
+
+## 📊 System Architecture
+![System Architecture](./sentinel_guard_architecture.svg)
+
+---
+
+## 🚀 Key Features
+* **Automated Scanning:** Detects critical vulnerabilities like Shell Injections (CWE-78) and Weak Hashes (CWE-327).
+* **AI Remediation:** Generates secure code replacements and provides detailed explanations for every vulnerability.
+* **Secure Dashboard:** Integrated with **Auth0** for professional-grade user authentication.
+
+---
+
+## 🛠️ How to Run Locally
+1. **Clone the Repo:** `git clone https://github.com/yashrajkshatriya74-star/Sentinel-AI-Remediator.git`
+2. **Install Dependencies:** `pip install -r requirements.txt`
+3. **Environment Setup:** Rename `.env.example` to `.env` and add your `GEMINI_API_KEY` and `AUTH0` credentials.
+4. **Launch:** `python main.py`
